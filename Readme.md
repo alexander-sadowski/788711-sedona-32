@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Садовский](https://up.htmlacademy.ru/htmlcss/32/user/788711).
-* Наставник: `Неизвестно`.
+* Наставник: [Магомед Кандаев](https://htmlacademy.ru/profile/magomedkandaev).
 
 ---
 
