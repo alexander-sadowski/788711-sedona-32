@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог гостиниц Седоны с фильтрами</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 </head>
 
 <body>
@@ -38,7 +40,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-button" href="#">Хочу сюда!</a>
+          <a class="navigation-link button button-brown" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -49,7 +51,9 @@
       <h2 class="filters-title">Гостиницы Седоны</h2>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -61,15 +65,15 @@
           <ul class="filters-form-list">
             <li class="filters-form-item">
               <input class="control-input" type="checkbox" name="pool" id="control-input-pool" checked>
-              <label class="control" for="control-input-pool">Бассейн</label>
+              <label class="control-label" for="control-input-pool">Бассейн</label>
             </li>
             <li class="filters-form-item">
               <input class="control-input" type="checkbox" name="parking" id="control-input-parking" checked>
-              <label class="control" for="control-input-parking">Парковка</label>
+              <label class="control-label" for="control-input-parking">Парковка</label>
             </li>
             <li class="filters-form-item">
               <input class="control-input" type="checkbox" name="wifi" id="control-input-wifi">
-              <label class="control" for="control-input-wifi">Wi-Fi</label>
+              <label class="control-label" for="control-input-wifi">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
@@ -78,15 +82,15 @@
           <ul class="filters-form-list">
             <li class="filters-form-list">
               <input class="control-input" type="radio" name="type-of-house" id="control-input-hotel" value="hotel" checked>
-              <label class="control" for="control-input-hotel">Гостиница</label>
+              <label class="control-label" for="control-input-hotel">Гостиница</label>
             </li>
             <li class="filters-form-list">
               <input class="control-input" type="radio" name="type-of-house" id="control-input-motel" value="motel">
-              <label class="control" for="control-input-motel">Мотель</label>
+              <label class="control-label" for="control-input-motel">Мотель</label>
             </li>
             <li class="filters-form-list">
               <input class="control-input" type="radio" name="type-of-house" id="control-input-apartments" value="apartments">
-              <label class="control" for="control-input-apartments">Апартаменты</label>
+              <label class="control-label" for="control-input-apartments">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
@@ -108,8 +112,8 @@
           </div>
         </fieldset>
         <div class="filters-form-buttons">
-          <button class="button" type="submit">Применить</button>
-          <button class="reset-button" type="reset">Сбросить</button>
+          <button class="button button-blue" type="submit">Применить</button>
+          <button class="button-reset" type="reset">Сбросить</button>
         </div>
       </form>
     </section>
@@ -127,17 +131,17 @@
       </form>
       <ul class="sorting-list">
         <li class="sorting-item">
-          <a class="button" href="#">
+          <a class="button-sorting" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
         </li>
         <li class="sorting-item">
-          <a class="button" href="#">
+          <a class="button-sorting" href="#">
             <span class="visually-hidden">Показать слайды</span>
           </a>
         </li>
         <li class="sorting-item">
-          <a class="button button-current" href="#">
+          <a class="button-sorting button-sorting-current" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
         </li>
@@ -156,14 +160,14 @@
             </a>
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 4000 ₽</span>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="button">В избранное</button>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button class="button button-blue" type="button">В избранное</button>
           </div>
           <div class="catalog-item-rating">
             <div class="hotel-stars">
               <img class="hotel-stars-four" src="img/stars-four.svg" width="93" height="17" alt="Количество звёзд гостиницы — четыре.">
             </div>
-            <p class="hotel-rating">Рейтинг: 8,5</p>
+            <span class="hotel-rating">Рейтинг: 8,5</span>
           </div>
         </li>
         <li class="catalog-item">
@@ -176,14 +180,14 @@
             </a>
             <span class="catalog-item-type">Мотель</span>
             <span class="catalog-item-price">От 3000 ₽</span>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="button">В избранное</button>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button class="button button-blue" type="button">В избранное</button>
           </div>
           <div class="catalog-item-rating">
             <div class="hotel-stars">
               <img class="hotel-stars-three" src="img/stars-three.svg" width="68" height="17" alt="Количество звёзд гостиницы — три.">
             </div>
-            <p class="hotel-rating">Рейтинг: 8,9</p>
+            <span class="hotel-rating">Рейтинг: 8,9</span>
           </div>
         </li>
         <li class="catalog-item">
@@ -196,14 +200,14 @@
             </a>
             <span class="catalog-item-type">Апартаменты</span>
             <span class="catalog-item-price">От 2000 ₽</span>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button favorites-button-current" type="button">В избранном</button>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button class="button button-favorites" type="button">В избранном</button>
           </div>
           <div class="catalog-item-rating">
             <div class="hotel-stars">
               <img class="hotel-stars-two" src="img/stars-two.svg" width="43" height="17" alt="Количество звёзд гостиницы — две.">
             </div>
-            <p class="hotel-rating">Рейтинг: 9,2</p>
+            <span class="hotel-rating">Рейтинг: 9,2</span>
           </div>
         </li>
         <li class="catalog-item">
@@ -216,44 +220,44 @@
             </a>
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 3000 ₽</span>
-            <a class="button" href="#">Подробнее</a>
-            <button class="button" type="button">В избранное</button>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button class="button button-blue" type="button">В избранное</button>
           </div>
           <div class="catalog-item-rating">
             <div class="hotel-stars">
               <img class="hotel-stars-two" src="img/stars-two.svg" width="43" height="17" alt="Количество звёзд гостиницы — две.">
             </div>
-            <p class="hotel-rating">Рейтинг: 9,2</p>
+            <span class="hotel-rating">Рейтинг: 9,2</span>
           </div>
         </li>
       </ul>
       <div class="pagination">
         <div class="pagination-more">
-          <button class="button pagination-show-more" type="button">Загрузить еще</button>
+          <button class="button button-large button-blue button-show-more" type="button">Загрузить еще</button>
         </div>
         <div class="pagination-pages">
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="button button-large pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="button button-large button-blue pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="button button-large button-blue pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="button button-large button-blue pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="button button-large button-blue pagination-link" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
+              <a class="button button-large button-blue pagination-link" href="#">10</a>
             </li>
           </ul>
           <form class="pagination-form">
-            <label class="visually-hidden" for="quantity">Гостиниц на странице:</label>
+            <label class="pagination-form-title" for="quantity">Гостиниц на странице:</label>
             <select class="pagination-select-control" id="quantity" name="quantity">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -269,12 +273,12 @@
       </div>
     </section>
     <section class="newsletter newsletter-inner">
-      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <h2 class="title newsletter-inner-title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">Подписаться</button>
+        <button class="button button-large button-blue" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
