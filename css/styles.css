@@ -436,6 +436,7 @@ body {
 }
 
 .main-footer {
+  margin-top: auto;
   display: flex;
 }
 
