@@ -226,6 +226,7 @@ body {
 
 .filters {
   padding-left: 72px;
+  padding-right: 72px;
   background-color: #68a2ca;
   background-image: url("../img/background-catalog.jpg");
   background-repeat: no-repeat;
@@ -235,9 +236,7 @@ body {
 }
 
 .filters-title {
-  width: 1200px;
   margin: 0;
-  display: inline-block;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -263,6 +262,8 @@ body {
 
 .filters-form-group {
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .filters-form-group:nth-child(1) {
@@ -282,6 +283,7 @@ body {
 }
 
 .filters-form-title {
+  padding: 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -309,6 +311,7 @@ body {
 
 .sorting {
   padding-left: 72px;
+  padding-right: 72px;
 }
 
 .sorting-form-label {
@@ -328,6 +331,7 @@ body {
 
 .catalog {
   padding-left: 72px;
+  padding-right: 72px;
 }
 
 .catalog-list {
