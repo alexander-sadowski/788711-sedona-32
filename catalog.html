@@ -29,19 +29,19 @@
         <a class="logo" href="index.html">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта по поиску жилья в городе Седона.">
         </a>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link button button-brown" href="#">Хочу сюда!</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link button button-brown button-wish" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -161,13 +161,11 @@
               </a>
               <span class="catalog-item-type">Гостиница</span>
               <span class="catalog-item-price">От 4000 ₽</span>
-              <a class="button button-brown" href="#">Подробнее</a>
-              <button class="button button-blue" type="button">В избранное</button>
+              <a class="button button-brown button-about" href="#">Подробнее</a>
+              <button class="button button-blue button-favorites" type="button">В избранное</button>
             </div>
             <div class="catalog-item-rating">
-              <div class="hotel-stars">
-                <img class="hotel-stars-four" src="img/stars-four.svg" width="93" height="17" alt="Количество звёзд гостиницы — четыре.">
-              </div>
+              <img class="hotel-stars" src="img/stars-four.svg" width="93" height="17" alt="Количество звёзд гостиницы — четыре.">
               <span class="hotel-rating">Рейтинг: 8,5</span>
             </div>
           </li>
@@ -181,13 +179,11 @@
               </a>
               <span class="catalog-item-type">Мотель</span>
               <span class="catalog-item-price">От 3000 ₽</span>
-              <a class="button button-brown" href="#">Подробнее</a>
-              <button class="button button-blue" type="button">В избранное</button>
+              <a class="button button-brown button-about" href="#">Подробнее</a>
+              <button class="button button-blue button-favorites" type="button">В избранное</button>
             </div>
             <div class="catalog-item-rating">
-              <div class="hotel-stars">
-                <img class="hotel-stars-three" src="img/stars-three.svg" width="68" height="17" alt="Количество звёзд гостиницы — три.">
-              </div>
+              <img class="hotel-stars" src="img/stars-three.svg" width="68" height="17" alt="Количество звёзд гостиницы — три.">
               <span class="hotel-rating">Рейтинг: 8,9</span>
             </div>
           </li>
@@ -201,13 +197,11 @@
               </a>
               <span class="catalog-item-type">Апартаменты</span>
               <span class="catalog-item-price">От 2000 ₽</span>
-              <a class="button button-brown" href="#">Подробнее</a>
-              <button class="button button-favorites" type="button">В избранном</button>
+              <a class="button button-brown button-about" href="#">Подробнее</a>
+              <button class="button button-favorites button-favorites-current" type="button">В избранном</button>
             </div>
             <div class="catalog-item-rating">
-              <div class="hotel-stars">
-                <img class="hotel-stars-two" src="img/stars-two.svg" width="43" height="17" alt="Количество звёзд гостиницы — две.">
-              </div>
+              <img class="hotel-stars" src="img/stars-two.svg" width="43" height="17" alt="Количество звёзд гостиницы — две.">
               <span class="hotel-rating">Рейтинг: 9,2</span>
             </div>
           </li>
@@ -221,13 +215,11 @@
               </a>
               <span class="catalog-item-type">Гостиница</span>
               <span class="catalog-item-price">От 3000 ₽</span>
-              <a class="button button-brown" href="#">Подробнее</a>
-              <button class="button button-blue" type="button">В избранное</button>
+              <a class="button button-brown button-about" href="#">Подробнее</a>
+              <button class="button button-blue button-favorites" type="button">В избранное</button>
             </div>
             <div class="catalog-item-rating">
-              <div class="hotel-stars">
-                <img class="hotel-stars-two" src="img/stars-two.svg" width="43" height="17" alt="Количество звёзд гостиницы — две.">
-              </div>
+              <img class="hotel-stars" src="img/stars-two.svg" width="43" height="17" alt="Количество звёзд гостиницы — две.">
               <span class="hotel-rating">Рейтинг: 9,2</span>
             </div>
           </li>
@@ -263,7 +255,7 @@
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-                <option value="4">4</option>
+                <option value="4" selected>4</option>
                 <option value="5">5</option>
                 <option value="10">10</option>
                 <option value="15">15</option>
@@ -274,29 +266,29 @@
         </div>
       </section>
       <section class="newsletter newsletter-inner">
-        <h2 class="title newsletter-inner-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="title newsletter-title newsletter-inner-title">Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button button-large button-blue" type="submit">Подписаться</button>
+          <button class="button button-large button-blue button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <ul class="footer-social">
         <li class="footer-social-item">
-          <a href="https://twitter.com/htmlacademy_ru">
+          <a class="footer-social-link footer-social-link-tw" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="https://www.facebook.com/htmlacademy">
+          <a class="footer-social-link footer-social-link-fb" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="https://www.youtube.com/user/htmlacademyru">
+          <a class="footer-social-link footer-social-link-yt" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
