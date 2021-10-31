@@ -39,37 +39,38 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-counter" href="#">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="favorites-counter">12</span>
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg>
             </a>
-            <!-- Pop-up start -->
-            <div class="pop-up">
-              <div class="pop-up-item">
-                <a class="pop-up-link" href="">
-                  <img class="pop-up-image" src="img/content/hotel-desert-quail-inn.jpg" alt="Мотель Desert Quail Inn.">
-                  <p class="pop-up-title">Desert Quail Inn</p>
-                  <span class="pop-up-text">Мотель</span>
+            <!-- popup start -->
+            <div class="popup popup-cart">
+              <div class="popup-item">
+                <a class="popup-link" href="">
+                  <img class="popup-image" src="img/content/hotel-desert-quail-inn.jpg" alt="Мотель Desert Quail Inn.">
+                  <p class="popup-title">Desert Quail Inn</p>
+                  <span class="popup-text">Мотель</span>
                 </a>
                 <button class="button-delete" type="button">
                   <span class="visually-hidden">Удалить</span>
                 </button>
               </div>
-              <div class="pop-up-item">
-                <a class="pop-up-link" href="">
-                  <img class="pop-up-image" src="img/content/hotel-villas-at-poco-diablo.jpg" alt="Апартаменты Villas at Poco Diablo.">
-                  <p class="pop-up-title">Villas at Poco Diablo</p>
-                  <span class="pop-up-text">Апартаменты</span>
+              <div class="popup-item">
+                <a class="popup-link" href="">
+                  <img class="popup-image" src="img/content/hotel-villas-at-poco-diablo.jpg" alt="Апартаменты Villas at Poco Diablo.">
+                  <p class="popup-title">Villas at Poco Diablo</p>
+                  <span class="popup-text">Апартаменты</span>
                 </a>
                 <button class="button-delete" type="button">
                   <span class="visually-hidden">Удалить</span>
                 </button>
               </div>
-              <a class="button button-pop-up" href="#">Все избранные</a>
+              <a class="button button-popup" href="#">Все избранные</a>
             </div>
-            <!-- Pop-up end -->
+            <!-- popup end -->
           </li>
           <li class="navigation-item">
             <a class="button button-wish" href="#">Хочу сюда!</a>
@@ -187,8 +188,8 @@
       </a>
     </footer>
     <!-- Modal window start-->
-    <div class="modal-wrap">
-      <div class="modal">
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-find">
         <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
         <button class="modal-close" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -198,19 +199,37 @@
         </button>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="modal-label" for="date-from">Дата заезда:</label>
-          <input class="modal-input" placeholder="Укажите дату" type="text" name="date-from" id="date-from" value="27 апреля 2020">
+          <input class="modal-input modal-input-date" placeholder="Укажите дату" type="text" name="date-from" id="date-from" value="27 апреля 2020">
           <span class="message-error">Мы не можем отправить вас в прошлое.</span>
           <label class="modal-label" for="date-to">Дата выезда:</label>
-          <input class="modal-input" placeholder="Укажите дату" type="text" name="date-to" id="date-to" value="1 сентября 2021">
+          <input class="modal-input modal-input-date" placeholder="Укажите дату" type="text" name="date-to" id="date-to" value="1 сентября 2021">
           <span class="message-success">На эти даты есть свободные номера. Пока есть.</span>
-          <label class="modal-label" for="grown-up-person">Взрослые:</label>
-          <input class="modal-input modal-input-number" type="number" name="grown-up-person" id="grown-up-person" value="2" min="1">
-          <div class="modal-inner">
+          <label class="modal-label" for="adult">Взрослые:</label>
+          <p class="number-inputs">
+            <button class="button-input-number number-minus">
+              <span class="visually-hidden">Больше</span>
+            </button>
+            <input class="modal-input modal-input-number" type="number" name="adult" id="adult" value="2" min="1">
+            <button class="button-input-number number-plus">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+          </p>
+          <p class="modal-tooltip">
             <label class="modal-label" for="children">Дети:</label>
-            <span class="tooltip" data-tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
-            </span>
-          </div>
-          <input class="modal-input modal-input-number" type="number" name="children" id="children" value="1" min="0">
+            <button class="button-tooltip" type="button">
+              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+            </button>
+            <span class="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+          </p>
+          <p class="number-inputs">
+            <button class="button-input-number number-minus">
+              <span class="visually-hidden">Больше</span>
+            </button>
+            <input class="modal-input modal-input-number" type="number" name="children" id="children" value="1" min="0">
+            <button class="button-input-number number-plus">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+          </p>
           <button class="button button-search-modal" type="submit">Найти</button>
         </form>
       </div>
