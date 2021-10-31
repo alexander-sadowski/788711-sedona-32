@@ -834,6 +834,7 @@ body {
   background-color: transparent;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-reset:hover {
