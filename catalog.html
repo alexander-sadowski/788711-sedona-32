@@ -41,15 +41,15 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span class="favorites-counter">12</span>
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg>
+              <span class="favorites-counter">12</span>
             </a>
-            <!-- popup start -->
+            <!-- Pop-up, для показа добавить класс popup-open -->
             <div class="popup popup-cart">
               <div class="popup-item">
-                <a class="popup-link" href="">
+                <a class="popup-link" href="#">
                   <img class="popup-image" src="img/content/hotel-desert-quail-inn.jpg" alt="Мотель Desert Quail Inn.">
                   <p class="popup-title">Desert Quail Inn</p>
                   <span class="popup-text">Мотель</span>
@@ -59,7 +59,7 @@
                 </button>
               </div>
               <div class="popup-item">
-                <a class="popup-link" href="">
+                <a class="popup-link" href="#">
                   <img class="popup-image" src="img/content/hotel-villas-at-poco-diablo.jpg" alt="Апартаменты Villas at Poco Diablo.">
                   <p class="popup-title">Villas at Poco Diablo</p>
                   <span class="popup-text">Апартаменты</span>
@@ -68,12 +68,12 @@
                   <span class="visually-hidden">Удалить</span>
                 </button>
               </div>
-              <a class="button button-popup" href="#">Все избранные</a>
+              <a class="button button-dark button-popup" href="#">Все избранные</a>
             </div>
-            <!-- popup end -->
+            <!-- Pop-up end -->
           </li>
           <li class="navigation-item">
-            <a class="button button-wish" href="#">Хочу сюда!</a>
+            <a class="button button-dark" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -154,32 +154,32 @@
           </div>
         </form>
       </section>
-      <div class="sorting">
-        <form class="sorting-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="sorting-form-label" for="sum">Найдено гостиниц:</label>
-          <input class="sorting-form-input" type="number" name="sum" id="sum" value="38" min="0" disabled>
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <button class="visually-hidden" type="submit" tabindex="-1">Отсортировать гостиницы</button>
-        </form>
-        <div class="sorting-list">
-          <a class="button-sorting" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button-sorting" href="#">
-            <span class="visually-hidden">Показать слайды</span>
-          </a>
-          <a class="button-sorting button-sorting-current">
-            <span class="visually-hidden">Показать список</span>
-          </a>
-        </div>
-      </div>
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
+        <div class="sorting">
+          <form class="sorting-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="sorting-form-label" for="sum">Найдено гостиниц:</label>
+            <input class="sorting-form-input" type="number" name="sum" id="sum" value="38" min="0" disabled>
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="field field-select" id="sorting" name="sorting">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <button class="visually-hidden" type="submit" tabindex="-1">Отсортировать гостиницы</button>
+          </form>
+          <div class="sorting-list">
+            <a class="button-sorting" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button-sorting" href="#">
+              <span class="visually-hidden">Показать слайды</span>
+            </a>
+            <a class="button-sorting button-sorting-current">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-image-link" href="#">
@@ -191,7 +191,7 @@
               </a>
               <span class="catalog-type">Гостиница</span>
               <span class="catalog-price">От 4000 ₽</span>
-              <a class="button button-about" href="#">Подробнее</a>
+              <a class="button button-dark button-about" href="#">Подробнее</a>
               <button class="button button-favorites" type="button">В избранное</button>
             </div>
             <div class="catalog-rating">
@@ -209,7 +209,7 @@
               </a>
               <span class="catalog-type">Мотель</span>
               <span class="catalog-price">От 3000 ₽</span>
-              <a class="button button-about" href="#">Подробнее</a>
+              <a class="button button-dark button-about" href="#">Подробнее</a>
               <button class="button button-favorites" type="button">В избранное</button>
             </div>
             <div class="catalog-rating">
@@ -227,7 +227,7 @@
               </a>
               <span class="catalog-type">Апартаменты</span>
               <span class="catalog-price">От 2000 ₽</span>
-              <a class="button button-about" href="#">Подробнее</a>
+              <a class="button button-dark button-about" href="#">Подробнее</a>
               <button class="button button-favorites button-favorites-current" type="button">В избранном</button>
             </div>
             <div class="catalog-rating">
@@ -245,7 +245,7 @@
               </a>
               <span class="catalog-type">Гостиница</span>
               <span class="catalog-price">От 3000 ₽</span>
-              <a class="button button-about" href="#">Подробнее</a>
+              <a class="button button-dark button-about" href="#">Подробнее</a>
               <button class="button button-favorites" type="button">В избранное</button>
             </div>
             <div class="catalog-rating">
@@ -254,11 +254,11 @@
             </div>
           </li>
         </ul>
-        <div class="pagination">
+        <div class="pagination-container">
           <div class="pagination-more">
             <button class="button button-show-more" type="button">Загрузить ещё</button>
           </div>
-          <div class="pagination-pages">
+          <div class="pagination">
             <div class="pagination-list">
               <a class="button pagination-link pagination-current">1</a>
               <a class="button pagination-link" href="#">2</a>
@@ -269,7 +269,7 @@
             </div>
             <form class="pagination-form">
               <label class="pagination-form-title" for="quantity">Гостиниц на странице:</label>
-              <select class="select-control pagination-select-control" id="quantity" name="quantity">
+              <select class="field field-select pagination-field-select" id="quantity" name="quantity">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -283,12 +283,12 @@
           </div>
         </div>
       </section>
-      <section class="newsletter">
+      <section class="newsletter newsletter-inner">
         <h2 class="title newsletter-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
-          <input class="newsletter-form-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <input class="field newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
