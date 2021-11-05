@@ -84,7 +84,7 @@
         <h2 class="filters-title">Гостиницы Седоны</h2>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -175,7 +175,7 @@
             <a class="button-sorting" href="#">
               <span class="visually-hidden">Показать слайды</span>
             </a>
-            <a class="button-sorting button-sorting-current">
+            <a class="button-sorting button-sorting-current" href="#">
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -195,7 +195,9 @@
               <button class="button button-favorites" type="button">В избранное</button>
             </div>
             <div class="catalog-rating">
-              <img class="hotel-stars" src="img/content/stars-four.svg" width="93" height="17" alt="Количество звёзд гостиницы — четыре.">
+              <div class="hotel-stars hotel-stars-4">
+                <span class="visually-hidden">Количество звёзд гостиницы — четыре</span>
+              </div>
               <span class="hotel-rating">Рейтинг: 8,5</span>
             </div>
           </li>
@@ -213,7 +215,9 @@
               <button class="button button-favorites" type="button">В избранное</button>
             </div>
             <div class="catalog-rating">
-              <img class="hotel-stars" src="img/content/stars-three.svg" width="68" height="17" alt="Количество звёзд гостиницы — три.">
+              <div class="hotel-stars hotel-stars-3">
+                <span class="visually-hidden">Количество звёзд гостиницы — три</span>
+              </div>
               <span class="hotel-rating">Рейтинг: 8,9</span>
             </div>
           </li>
@@ -231,7 +235,9 @@
               <button class="button button-favorites button-favorites-current" type="button">В избранном</button>
             </div>
             <div class="catalog-rating">
-              <img class="hotel-stars" src="img/content/stars-two.svg" width="43" height="17" alt="Количество звёзд гостиницы — две.">
+              <div class="hotel-stars hotel-stars-2">
+                <span class="visually-hidden">Количество звёзд гостиницы — две</span>
+              </div>
               <span class="hotel-rating">Рейтинг: 9,2</span>
             </div>
           </li>
@@ -249,38 +255,38 @@
               <button class="button button-favorites" type="button">В избранное</button>
             </div>
             <div class="catalog-rating">
-              <img class="hotel-stars" src="img/content/stars-two.svg" width="43" height="17" alt="Количество звёзд гостиницы — две.">
+              <div class="hotel-stars hotel-stars-2">
+                <span class="visually-hidden">Количество звёзд гостиницы — две</span>
+              </div>
               <span class="hotel-rating">Рейтинг: 9,2</span>
             </div>
           </li>
         </ul>
-        <div class="pagination-container">
-          <div class="pagination-more">
-            <button class="button button-show-more" type="button">Загрузить ещё</button>
+        <div class="pagination-more">
+          <button class="button button-show-more" type="button">Загрузить ещё</button>
+        </div>
+        <div class="pagination">
+          <div class="pagination-list">
+            <a class="button pagination-link pagination-current">1</a>
+            <a class="button pagination-link" href="#">2</a>
+            <a class="button pagination-link" href="#">3</a>
+            <a class="button pagination-link" href="#">4</a>
+            <a class="button pagination-link" href="#">...</a>
+            <a class="button pagination-link" href="#">10</a>
           </div>
-          <div class="pagination">
-            <div class="pagination-list">
-              <a class="button pagination-link pagination-current">1</a>
-              <a class="button pagination-link" href="#">2</a>
-              <a class="button pagination-link" href="#">3</a>
-              <a class="button pagination-link" href="#">4</a>
-              <a class="button pagination-link" href="#">...</a>
-              <a class="button pagination-link" href="#">10</a>
-            </div>
-            <form class="pagination-form">
-              <label class="pagination-form-title" for="quantity">Гостиниц на странице:</label>
-              <select class="field field-select pagination-field-select" id="quantity" name="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4" selected>4</option>
-                <option value="5">5</option>
-                <option value="10">10</option>
-                <option value="15">15</option>
-              </select>
-              <button class="visually-hidden" type="submit" tabindex="-1">Показать</button>
-            </form>
-          </div>
+          <form class="pagination-form">
+            <label class="pagination-form-title" for="quantity">Гостиниц на странице:</label>
+            <select class="field field-select pagination-field-select" id="quantity" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+            </select>
+            <button class="visually-hidden" type="submit" tabindex="-1">Показать</button>
+          </form>
         </div>
       </section>
       <section class="newsletter newsletter-inner">
